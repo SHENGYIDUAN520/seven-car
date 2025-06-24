@@ -1,0 +1,24 @@
+--cpu Cortex-M3
+"seven-car\startup_stm32f103xb.o"
+"seven-car\main.o"
+"seven-car\gpio.o"
+"seven-car\usart.o"
+"seven-car\stm32f1xx_it.o"
+"seven-car\stm32f1xx_hal_msp.o"
+"seven-car\stm32f1xx_hal_gpio_ex.o"
+"seven-car\stm32f1xx_hal_uart.o"
+"seven-car\stm32f1xx_hal.o"
+"seven-car\stm32f1xx_hal_rcc.o"
+"seven-car\stm32f1xx_hal_rcc_ex.o"
+"seven-car\stm32f1xx_hal_gpio.o"
+"seven-car\stm32f1xx_hal_dma.o"
+"seven-car\stm32f1xx_hal_cortex.o"
+"seven-car\stm32f1xx_hal_pwr.o"
+"seven-car\stm32f1xx_hal_flash.o"
+"seven-car\stm32f1xx_hal_flash_ex.o"
+"seven-car\stm32f1xx_hal_exti.o"
+"seven-car\system_stm32f1xx.o"
+--library_type=microlib --strict --scatter "seven-car\seven-car.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "seven-car.map" -o seven-car\seven-car.axf
