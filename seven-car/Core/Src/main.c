@@ -93,8 +93,8 @@ int main(void)
   
   HAL_TIM_PWM_Start(&htim4,TIM_CHANNEL_3);
   HAL_GPIO_WritePin(GPIOB,GPIO_PIN_12,GPIO_PIN_RESET);
-  
-  
+  HAL_GPIO_WritePin(GPIOB,GPIO_PIN_13,GPIO_PIN_SET);
+  HAL_Delay(2000);
   /* USER CODE BEGIN 2 */
 
   /* USER CODE END 2 */
